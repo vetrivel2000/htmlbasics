@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>WELCOME PAGE!!</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+   * {
+    box-sizing: border-box;
+   }
+   .container{
+    padding: 16px;
+   }
+   .row{
+    line-height: 50px;
+   }
+   .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+   }
+   select{
+    width: 390px;
+    height: 40px;
+   }
+   textarea{
+    width: 390px;
+   }
+   #align{
+    text-align: center;
+   }
+   </style>
+  </head>
+  <body>
+    <form action="action_page.php">
+     <div class="container">
+       <img src="zoho-logo.png" class="img">
+       <h2 id="align">USER REGISTRATION FORM</h2>
+       <table style="width=100%" align="center">
+        <tr class="row">
+          <td><label for="name"><b>User Name</b></label></td>
+          <td><input type="text" style="height: 40px; width: 390px;" placeholder="Enter your name" id="name" required></td>
+        </tr>
+        <tr class="row">
+           <td><label for="email"><b>Email</b></label></td>
+           <td><input type="text" style="height: 40px; width: 390px;" placeholder="Enter your Email" id="email" required></td>
+        </tr>
+        <tr class="row">
+          <td><label for="psw"><b>Password</b></label></td>
+          <td><input type="password" style="height: 40px; width: 390px;" style="height: 40px; width: 400px;" placeholder="Enter Password" id="psw" required></td>
+        </tr>
+        <tr class="row">
+          <td><label for="cpsw"><b>Confirm Password</b></label></td>
+          <td><input type="password" style="height: 40px; width: 390px;" placeholder="Re-Enter Password" id="cpsw" required></td>
+        </tr>
+        <tr class="row">
+           <td><label for="phone"><b>Phone</b></label></td>
+           <td><input type="text" style="height: 40px; width: 390px;" placeholder="Enter your Phone Number" id="phone" required></td>
+        </tr>
+        <tr class="row">
+          <td><label for="dob"><b>Date Of Birth</b></label></td>
+          <td><input type="date" style="height: 40px; width: 390px;" id="dob" required></td>
+        </tr>
+        <tr class="row">
+          <td><label><b>Gender</b></label></td>
+          <td><input type="radio" name="gender" value="male"> Male 
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other</td>
+        </tr>
+        <tr class="row">
+          <td><label><b>Hobbies</b></label></td>
+          <td>
+                <select>
+                  <option>Select your Hobbies</option>
+                  <option>Book Reading</option>
+                  <option>Playing Cricket</option>
+                  <option>Watching cinema</option>
+                </select>
+                <div class="select_arrow"></div>
+              </td>
+        </tr>
+        <tr class="row">
+          <td><label><b>State</b></label></td>
+          <td>
+                <select>
+                  <option>Select your State</option>
+                  <option>Assam</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                  <option>TamilNadu</option>
+                  <option>Telangana</option>
+                </select>
+                <div class="select_arrow"></div>
+              </td>
+        </tr>
+        <tr class="row">
+          <td><label><b>Country</b></label></td>
+          <td>
+                <select>
+                  <option>Select your Country</option>
+                  <option>India</option>
+                </select>
+                <div class="select_arrow"></div>
+              </td>
+        </tr>
+        <tr class="row">
+          <td><label><b>Comments</b></label></td>
+          <td><textarea rows="4" cols="50" name="comment"></textarea></td>
+        </tr>
+        <tr class="row">
+          <td><input type="checkbox"><b>I have read your <a href="https://www.zoho.com/en-in/terms.html">Terms & Conditions</a> carefully and accept it</b></td>
+        </tr>
+        <tr class="row">
+          <td><input type="submit" value="Submit"></td>
+          <td><input type="reset" value="Reset"></td>
+        </tr>
+      </table>
+     </div>
+    </form>
+  </body>
+</html>
